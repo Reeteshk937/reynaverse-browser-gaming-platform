@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectors | REYNAVERSE</title>
+    <meta name="description" content="Browse the REYNAVERSE library by sector: Action, Racing, Horror, Multiplayer, and more.">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game-page.css">
+</head>
+<body class="catalog-body">
+
+    <div class="scroll-progress-container"><div class="scroll-progress-bar" id="scroll-bar"></div></div>
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Return to top"><i class="fas fa-chevron-up"></i></button>
+
+    <div class="search-overlay" id="search-overlay">
+        <button class="close-search" id="close-search"><i class="fas fa-times"></i></button>
+        <div class="search-matrix">
+            <h2 class="search-title">SEARCH THE <span class="neon-text-magenta">MAINFRAME</span></h2>
+            <div class="search-input-wrapper">
+                <input type="text" placeholder="Locate game..." class="massive-search-input" id="search-input">
+                <div class="search-line-glow"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">REYNA<span class="neon-text-cyan">VERSE</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="games.html" class="nav-item">Games</a></li>
+                <li><a href="trending.html" class="nav-item">Trending</a></li>
+                <li><a href="categories.html" class="nav-item active">Categories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-trigger" id="search-trigger"><i class="fas fa-search search-icon"></i></button>
+                <button class="mobile-toggle" id="mobile-toggle"><span class="bar top-bar"></span><span class="bar mid-bar"></span><span class="bar bot-bar"></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="catalog-main">
+        <section class="page-header bg-alt-2" style="padding-top: 120px;">
+            <div class="container text-center">
+                <h1 class="page-title">SYSTEM <span class="neon-text-cyan">SECTORS</span></h1>
+                <p class="page-desc">Filter the matrix by your preferred combat parameters.</p>
+            </div>
+        </section>
+
+        <section class="section categories-section">
+            <div class="container">
+                <div class="categories-grid">
+                    <a href="games.html?filter=action" class="category-card tilt-card" style="display: block; text-decoration: none;">
+                        <i class="fas fa-fist-raised cat-icon text-neon-red"></i>
+                        <h3 class="cat-title">Action</h3>
+                        <p class="cat-desc">High intensity combat arrays.</p>
+                    </a>
+                    <a href="games.html?filter=racing" class="category-card tilt-card" style="display: block; text-decoration: none;">
+                        <i class="fas fa-bolt cat-icon text-neon-blue"></i>
+                        <h3 class="cat-title">Racing</h3>
+                        <p class="cat-desc">Break supersonic speed limits.</p>
+                    </a>
+                    <a href="games.html?filter=horror" class="category-card tilt-card" style="display: block; text-decoration: none;">
+                        <i class="fas fa-skull cat-icon text-neon-purple"></i>
+                        <h3 class="cat-title">Horror</h3>
+                        <p class="cat-desc">Survive deep psychological terrors.</p>
+                    </a>
+                    <a href="games.html?filter=cricket" class="category-card tilt-card" style="display: block; text-decoration: none;">
+                        <i class="fas fa-cricket-bat-ball cat-icon text-neon-green"></i>
+                        <h3 class="cat-title">Cricket</h3>
+                        <p class="cat-desc">Futuristic premium sports simulations.</p>
+                    </a>
+                    <a href="games.html?filter=multiplayer" class="category-card tilt-card" style="display: block; text-decoration: none;">
+                        <i class="fas fa-users-rays cat-icon text-neon-cyan"></i>
+                        <h3 class="cat-title">Multiplayer</h3>
+                        <p class="cat-desc">Connect with grids globally.</p>
+                    </a>
+                    <a href="games.html?filter=puzzle" class="category-card tilt-card" style="display: block; text-decoration: none;">
+                        <i class="fas fa-cubes cat-icon text-neon-yellow"></i>
+                        <h3 class="cat-title">Puzzle</h3>
+                        <p class="cat-desc">Overload your mental logic processing.</p>
+                    </a>
+                    <a href="games.html?filter=meme" class="category-card tilt-card" style="display: block; text-decoration: none;">
+                        <i class="fas fa-laugh-squint cat-icon text-neon-orange"></i>
+                        <h3 class="cat-title">Meme</h3>
+                        <p class="cat-desc">Web culture induced chaos engines.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

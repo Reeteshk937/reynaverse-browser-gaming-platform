@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Nodes | REYNAVERSE</title>
+    <meta name="description" content="Play the most popular and trending games right now on REYNAVERSE.">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game-page.css">
+</head>
+<body class="catalog-body">
+
+    <div class="scroll-progress-container"><div class="scroll-progress-bar" id="scroll-bar"></div></div>
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Return to top"><i class="fas fa-chevron-up"></i></button>
+
+    <div class="search-overlay" id="search-overlay">
+        <button class="close-search" id="close-search"><i class="fas fa-times"></i></button>
+        <div class="search-matrix">
+            <h2 class="search-title">SEARCH THE <span class="neon-text-magenta">MAINFRAME</span></h2>
+            <div class="search-input-wrapper">
+                <input type="text" placeholder="Locate game, category, or module..." class="massive-search-input" id="search-input">
+                <div class="search-line-glow"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">REYNA<span class="neon-text-cyan">VERSE</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="games.html" class="nav-item">Games</a></li>
+                <li><a href="trending.html" class="nav-item active">Trending</a></li>
+                <li><a href="categories.html" class="nav-item">Categories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-trigger" id="search-trigger"><i class="fas fa-search search-icon"></i></button>
+                <button class="mobile-toggle" id="mobile-toggle"><span class="bar top-bar"></span><span class="bar mid-bar"></span><span class="bar bot-bar"></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="catalog-main">
+        <section class="page-header bg-alt-2" style="padding-top: 120px;">
+            <div class="container text-center">
+                <h1 class="page-title">GLOBAL <span class="neon-text-magenta">TRENDS</span></h1>
+                <p class="page-desc">The most accessed nodes currently overloading the REYNAVERSE servers.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="ad-placeholder banner-ad" style="margin-bottom: 40px;"><span>[ADSENSE LEADERBOARD]</span></div>
+                
+                <div class="games-grid" id="trending-page-grid">
+                    <div class="loader-spinner" style="grid-column: 1/-1; margin: 50px auto;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/games.js"></script>
+</body>
+</html>

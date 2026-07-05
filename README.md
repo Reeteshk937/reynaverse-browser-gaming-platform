@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# Future Gaming Platform
+=======
 # 🎮 ReynaVerse – Browser Gaming Platform
 
 <p align="center">
@@ -159,3 +162,4 @@ https://www.linkedin.com/in/reetesh-kumar-486074379
 If you found this project helpful,
 
 please consider giving it a ⭐ on GitHub.
+>>>>>>> 7afb533f4c4da694f40a690929a6cca6c8387f88
